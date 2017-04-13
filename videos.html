@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>videospage</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+   .pawan{
+   background-color: #e6b3ff;
+   
+   }
+  </style>
+ </head>
+ <body class="pawan">
+ <div class="row">
+ <div class="col-sm-8">
+ <center>
+ <div style="background-color:#b3ccff">
+ <h2 style="color:red">VIDEOS</h2>
+ </div>
+ </center>
+ </div>
+ <div class="col-sm-4">
+ <img style="width:200px;height:150px;margin-right:10%;" src="digital.png">
+ <br><br>
+ </div>
+ </div>
+ <div class="container">
+ <div class="row">
+ <div class="col-md-6"> 
+  
+ <video id="video1" width="400" controls>
+  <source src="1stvideo.mp4" type="video/mp4">
+  <source src="1stvideo.ogg" type="video/ogg">
+</video>
+ 
+ </div>
+ <div class="col-md-6">
+<div>
+<br><h4> Agriculural Production and Productivity in india</h4><br><br>
+ <button onclick="playPause(myVideo1)">Play/Pause</button> 
+  <button onclick="makeBig(myVideo1)">Big</button>
+  <button onclick="makeSmall(myVideo1)">Small</button>
+  <button onclick="makeNormal(myVideo1)">Normal</button>
+  </div>
+  </div>
+ </div>
+ </div>
+ <!--2nd video--><br><br>
+ <div class="container">
+ <div class="row">
+ <div class="col-md-6"> 
+  
+ <video id="video2" width="400" controls>
+  <source src="2ndvideo.mp4" type="video/mp4">
+  <source src="2ndvideo.ogg" type="video/ogg">
+</video>
+ 
+ </div>
+ <div class="col-md-6">
+<div>
+<br><h4> Difference between Production and productivity</h4><br><br>
+ <button onclick="playPause(myVideo2)">Play/Pause</button> 
+  <button onclick="makeBig(myVideo2)">Big</button>
+  <button onclick="makeSmall(myVideo2)">Small</button>
+  <button onclick="makeNormal(myVideo2)">Normal</button>
+  </div>
+  </div>
+ </div>
+ </div>
+ <!--3rd video--><br><br>
+ <div class="container">
+ <div class="row">
+ <div class="col-md-6"> 
+  
+ <video id="video3" width="400" controls>
+  <source src="3rdvideo.mp4" type="video/mp4">
+  <source src="3rdvideo.ogg" type="video/ogg">
+</video>
+ 
+ </div>
+ <div class="col-md-6">
+<div>
+<br><h4>Crop Production and Management</h4><br><br>
+ <button onclick="playPause(myVideo3)">Play/Pause</button> 
+  <button onclick="makeBig(myVideo3)">Big</button>
+  <button onclick="makeSmall(myVideo3)">Small</button>
+  <button onclick="makeNormal(myVideo3)">Normal</button>
+  </div>
+  </div>
+ </div>
+ </div>
+ <!--4th video--><br><br>
+ <div class="container">
+ <div class="row">
+ <div class="col-md-6"> 
+  
+ <video id="video4" width="400" controls>
+  <source src="4thvideo.mp4" type="video/mp4">
+  <source src="4thvideo.ogg" type="video/ogg">
+</video>
+ 
+ </div>
+ <div class="col-md-6">
+<div>
+<br><h4> Largest Crop Producers states in India</h4><br><br>
+ <button onclick="playPause(myVideo4)">Play/Pause</button> 
+  <button onclick="makeBig(myVideo4)">Big</button>
+  <button onclick="makeSmall(myVideo4)">Small</button>
+  <button onclick="makeNormal(myVideo4)">Normal</button>
+  </div>
+  </div>
+ </div>
+ </div>
+ 
+ <!--5th video--><br><br>
+ <div class="container">
+ <div class="row">
+ <div class="col-md-6"> 
+  
+ <video id="video5" width="400" controls>
+  <source src="5thvideo.mp4" type="video/mp4">
+  <source src="5thvideo.ogg" type="video/ogg">
+  <source src="5thvideo.ogg" type="video/ogg">
+</video>
+ 
+ </div>
+ <div class="col-md-6">
+<div>
+<br><h4> Management Steps</h4><br><br>
+ <button onclick="playPause(myVideo5)">Play/Pause</button> 
+  <button onclick="makeBig(myVideo5)">Big</button>
+  <button onclick="makeSmall(myVideo5)">Small</button>
+  <button onclick="makeNormal(myVideo5)">Normal</button>
+  </div>
+  </div>
+ </div>
+ </div>
+ 
+ <script>
+ var myVideo1 = document.getElementById("video1");
+ var myVideo2 = document.getElementById("video2");
+ var myVideo3 = document.getElementById("video3");
+ var myVideo4 = document.getElementById("video4");
+ var myVideo5 = document.getElementById("video5");
+function playPause(x) {
+
+    if (x.paused) 
+        x.play(); 
+    else 
+        x.pause(); 
+} 
+
+function makeBig(x) { 
+    x.width = 560; 
+} 
+
+function makeSmall(x) { 
+    x.width = 320; 
+} 
+
+function makeNormal(x) { 
+    x.width = 420; 
+} 
+ 
+ </script>
+ </body>
